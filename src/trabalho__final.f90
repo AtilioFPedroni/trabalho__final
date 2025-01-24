@@ -32,7 +32,7 @@ module automato
 
       do i = 1, n!para cada sitio
        ! calcula os vizinhos
-        esquerda = mod(i - 2 + n, n) + i 
+        esquerda = mod(i - 2 + n, n) + 1
         direita =  mod(i +0 + n, n) +1
 
         ! calcula o valor do vizinho(3bits)
