@@ -1,5 +1,6 @@
-program check
+program teste
 implicit none
 
-print *, "Put some tests in here!"
-end program check
+print *, "Não mexi em nada neste arquivo"
+
+end program teste
