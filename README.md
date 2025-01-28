@@ -32,3 +32,54 @@ Um autômato celular é um modelo computacional discreto que consiste em uma gra
 - **Loops `do`**: Controlam iterações.  
 - **Subrotinas**: Estruturam lógica modular.  
 - **Entrada/Saída**: Manipulação de dados com `print` e `write`.
+
+# Implementação Gráfica no Python
+
+## Função `ler_dados(filename)`
+Lê os dados de um arquivo e os prepara para visualização, convertendo `*` (células vivas) em 1 e espaços (células mortas) em 0.  
+- Ajusta o tamanho das linhas e retorna um array NumPy bidimensional.  
+- Importante para garantir a correta formatação dos dados para análise.
+
+## Função `plotar_dados(data, n_regra, p, seed_value)`
+Gera um gráfico visual da evolução do autômato celular, facilitando a análise dos padrões criados pela regra e pela aleatoriedade.
+
+## Execução Principal
+1. Define o arquivo de entrada.  
+2. Lê os dados com `ler_dados()`.  
+3. Configura parâmetros (`n_regra`, `p`, `seed_value`).  
+4. Cria o gráfico com `plotar_dados()`.
+
+## Interpretação do Gráfico
+- **Eixo Vertical**: Representa o tempo (linhas mais altas são passos iniciais).  
+- **Eixo Horizontal**: Representa as células (cada coluna é uma célula).  
+- **Cores**: Preto (0, morto) e branco (1, vivo).  
+
+### Padrões Observados
+- **Início**: Ponto central vivo.  
+- **Evolução**: Regras determinam a propagação dos padrões.  
+- **Aleatoriedade**: Introduz desvios e irregularidades.  
+
+O gráfico combina regras fixas e aleatoriedade, revelando padrões dinâmicos e complexos.
+
+
+# Valores para Regra e Semente
+
+## Regra
+- Número inteiro entre **0 e 255**, definindo as transições do autômato.  
+- Exemplos de padrões:
+  - **30**: Padrões caóticos.  
+  - **90**: Triângulos simétricos.  
+  - **110**: Complexos e caóticos.  
+  - **184**: Mudanças regulares.  
+
+## Semente
+- Qualquer número inteiro.  
+- Determina a sequência aleatória, afetando os padrões.  
+- A mesma semente gera os mesmos resultados (com a mesma regra).
+
+## Resumo
+1. Compile e execute o programa Fortran, informando:
+   - **Regra**: 0 a 255.  
+   - **Semente**: Número inteiro.  
+2. Execute o script Python para visualizar os padrões.  
+3. Varie a regra e a semente para explorar diferentes comportamentos.
