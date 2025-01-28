@@ -66,11 +66,7 @@ O gráfico combina regras fixas e aleatoriedade, revelando padrões dinâmicos e
 
 ## Regra
 - Número inteiro entre **0 e 255**, definindo as transições do autômato.  
-- Exemplos de padrões:
-  - **30**: Padrões caóticos.  
-  - **90**: Triângulos simétricos.  
-  - **110**: Complexos e caóticos.  
-  - **184**: Mudanças regulares.  
+
 
 ## Semente
 - Qualquer número inteiro.  
